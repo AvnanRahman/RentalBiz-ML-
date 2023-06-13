@@ -8,7 +8,7 @@ model = pickle.load(open('model_tf.pkl', 'rb'))
 X_train = pickle.load(open("X_train.pkl", "rb"))
 # word_index = pickle.load(open("word_index.pkl", "rb"))
 app = Flask(
-    __name__, template_folder=r"C:\Users\Achmad Shiddiqi\Belajar_ML\capstone_model")
+    __name__, template_folder=r"")
 
 
 @app.route('/')
