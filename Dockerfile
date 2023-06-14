@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8080
 
 # Specify the command to run your application
-CMD [ "python", "deploy/app.py" ]
+CMD [ "python", "app.py" ]
