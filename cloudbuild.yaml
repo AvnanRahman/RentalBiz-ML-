@@ -19,5 +19,8 @@ steps:
       - 'asia-east1'
       - '--allow-unauthenticated'
       - '--port'
-      - '8000'
+      - '${_PORT}'
+      - '--set-env-vars'
+      - 'PORT=$_PORT'
+
 
