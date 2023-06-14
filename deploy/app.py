@@ -4,6 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
+import os
 
 model = load_model('my_model.h5')
 X_train = pickle.load(open("X_train.pkl", "rb"))
@@ -44,8 +45,10 @@ def result():
         result = "Transportasi"
     elif result.argmax() == [8]:
         result = "Kamera"
-    return render_template("result.html", result=result)
+    # return render_template("result.html", result=result)
+    return jsonify(str(result))
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
