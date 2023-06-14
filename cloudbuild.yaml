@@ -19,5 +19,5 @@ steps:
       - 'asia-east1'
       - '--allow-unauthenticated'
       - '--port'
-      - '${_PORT}'
+      - '8000'
 
