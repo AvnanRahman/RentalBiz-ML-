@@ -18,9 +18,7 @@ steps:
       - '--region'
       - 'asia-east1'
       - '--allow-unauthenticated'
-      - '--port'
-      - '5000'
+      # - '--port'
+      # - '5000'
       # - '--set-env-vars'
       # - 'PORT=$_PORT'
-
-
