@@ -21,7 +21,7 @@ steps:
       - '--platform'
       - 'managed'
       - '--memory'
-      - '128Mi'
+      - '512Mi'
       - '--port'
       - '5000'
       # - '--set-env-vars'
